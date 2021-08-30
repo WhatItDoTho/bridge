@@ -1,5 +1,7 @@
 
 body {
+     margin: 0px;
+
 	animation: myAnim 1s ease-in 0s 1 alternate both;
 
 background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8f7, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #f7f8f7, #f9f9f9, #fafbfa, #fcfcfc);
@@ -14,6 +16,7 @@ background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8
   }
 }
 .menu-bar {
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: flex-start;
@@ -24,6 +27,7 @@ background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8
 }
 
 .top-section {
+  width: 100%;
   margin: 0 !important;
   padding: 0 !important;
   background-color: #0841AF;
@@ -31,6 +35,8 @@ background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8
   justify-content: flex-start;
   box-sizing: border-box;
   line-break: auto;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .mid-section {
   background-color: #white;
@@ -38,6 +44,8 @@ background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8
   justify-content: flex-start;
   box-sizing: border-box;
   line-break: auto;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .item {
