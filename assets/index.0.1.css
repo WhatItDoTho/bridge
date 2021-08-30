@@ -19,13 +19,13 @@ background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8
   justify-content: flex-start;
   box-sizing: border-box;
   line-break: auto;
-  margin: 0px;
-padding: 0px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .top-section {
-  margin: 0px;
-  padding: 0px;
+  margin: 0 !important;
+  padding: 0 !important;
   background-color: #0841AF;
   display: flex;
   justify-content: flex-start;
