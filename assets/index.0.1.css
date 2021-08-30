@@ -1,0 +1,25 @@
+body {
+	animation: myAnim 1s ease-in 0s 1 alternate both;
+
+  background: linear-gradient(122deg, #1c3d56 0%, #eeeeee 100%);
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+
+}
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
