@@ -1,9 +1,8 @@
-background-color: #1988f7;
+
 body {
 	animation: myAnim 1s ease-in 0s 1 alternate both;
 
-  
-
+background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8f7, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #f7f8f7, #f9f9f9, #fafbfa, #fcfcfc);
 }
 @keyframes myAnim {
   0% {
@@ -15,14 +14,34 @@ body {
   }
 }
 .menu-bar {
-  background-color: #1988f7;
+  background-color: white;
   display: flex;
   justify-content: flex-start;
   box-sizing: border-box;
+  line-break: auto;
+  margin: 0px;
+padding: 0px;
+}
+
+.top-section {
+  margin: 0px;
+  padding: 0px;
+  background-color: #0841AF;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  line-break: auto;
+}
+.mid-section {
+  background-color: #white;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  line-break: auto;
 }
 
 .item {
-  color: white;
+  color: darkslateblue;
   background-color: transparent;
   font-size: 18px;
   display: inline-block;
@@ -38,13 +57,13 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 h1 {
-  color: greenyellow;
+  color: white;
   font-family: verdana;
   font-size: 300%;
 
 }
 p  {
-  color: red;
+  color: grey;
   font-family: courier;
   font-size: 160%;
 }
