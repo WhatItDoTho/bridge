@@ -1,5 +1,7 @@
 
 body {
+  font: 14px Roboto, sans-serif;
+
      margin: 0px;
 
 	animation: myAnim 1s ease-in 0s 1 alternate both;
