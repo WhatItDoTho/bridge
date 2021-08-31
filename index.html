@@ -16,7 +16,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-host-cloud.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
   </head>
@@ -59,6 +59,8 @@
           </div>
           <div class="functional-buttons">
             <ul>
+              
+</li>
               <li><a id="connectButton" href="#">Connect</a></li>
             </ul>
           </div>
@@ -79,6 +81,38 @@
               <div id="search-section">
               	<form id="suggestion_form" name="gs" method="get" action="#">
                 
+                  <div class="row">
+                    <div class="col">
+                      <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select "From" Chain
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
+                    </div>
+                    <div class="col">
+                      this space should be blank
+                    </div>
+                    <div class="col">
+                      <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select "To" Chain
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
+                    </div>
+                  </div>
+
+
+
                 <div class="row">
                     <div class="col">
                       <input type="text" name="recipientAddress" class="recipientAddress" placeholder="Enter recipient address" autocomplete="on">
@@ -400,9 +434,9 @@
     <!-- web3 -->
       <script src="assets/js/web3.js/dist/web3.min.js"></script>
       <script src="node_modules/@metamask/onboarding/dist/metamask-onboarding.bundle.js" defer></script>
-      <script src="contract.js" defer></script>
+      <script src="assets/js/contract.js" defer></script>
 
-<!--     <script language = "text/Javascript"> 
+     <script language = "text/Javascript"> 
   
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the
@@ -413,10 +447,10 @@
           }
       }
     </script>
- -->
+ 
     <script> 
 
-      // all your js code goes here
+      /* all your js code goes here
       $(document).ready(function() {
 
         // fn for connect button that calls metamask
@@ -426,7 +460,7 @@
         })
 
       })
-
+*/
     </script>
   </body>
 </html>
