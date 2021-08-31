@@ -60,10 +60,11 @@ const initialize = () => {
       // Will open the MetaMask UI
       onboardButton.disabled = true;
       await ethereum.request({ method: 'eth_requestAccounts' });
-      onboardButton.disabled = false;
+      const accounts = await ethereum.request({ method: 'eth_accounts' });
+      //We take the first address in the array of addresses and display it
+      onboardButton.innerText = accounts[0] || 'Not able to get accounts';
     } catch (error) {
       console.error(error);
-      onboardButton.disabled = false;
     }
   };
 
@@ -85,8 +86,9 @@ const initialize = () => {
       onboardButton.disabled = false;
     }
   };
-  MetaMaskClientCheck();
 
+  MetaMaskClientCheck();
+  
 }
 
 window.addEventListener('DOMContentLoaded', initialize)
