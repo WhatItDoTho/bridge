@@ -58,10 +58,12 @@ const initialize = () => {
   const onClickConnect = async () => {
     try {
       // Will open the MetaMask UI
-      // You should disable this button while the request is pending!
+      onboardButton.disabled = true;
       await ethereum.request({ method: 'eth_requestAccounts' });
+      onboardButton.disabled = false;
     } catch (error) {
       console.error(error);
+      onboardButton.disabled = false;
     }
   };
 
