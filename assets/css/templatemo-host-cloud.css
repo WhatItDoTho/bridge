@@ -341,7 +341,7 @@ header {
 	transition: all 0.5s;
 }
 .functional-buttons	ul li:first-child a:hover {
-	color: #00bcd4;
+	color: #000;
 	background-color: #fff;
 }
 .functional-buttons	ul li:last-child a {
@@ -421,6 +421,8 @@ header {
 	transition: all 0.5s;
 	margin-bottom: 30px;
 }
+
+
 .banner #search-section button:hover {
 	background-color: #00a4b9;
 }
