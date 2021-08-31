@@ -1,14 +1,17 @@
-
+@font-face {
+  font-family: LemonMilk;
+  src: url(LEMONMILK-Regular.otf);
+}
 body {
-  font: 14px Roboto, sans-serif;
+  font: 14px LemonMilk, sans-serif;
 
      margin: 0px;
 
-	animation: myAnim 1s ease-in 0s 1 alternate both;
+	animation: anim 1s ease-in 0s 1 alternate both;
 
 background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8f7, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #f7f8f7, #f9f9f9, #fafbfa, #fcfcfc);
 }
-@keyframes myAnim {
+@keyframes anim {
   0% {
     opacity: 0;
   }
@@ -32,7 +35,7 @@ background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8
   width: 100%;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #0841AF;
+background-image: linear-gradient(to bottom, #5481a6, #5882aa, #5c84ae, #6085b1, #6586b5, #6a88b8, #6e8bbb, #738dbe, #7891c1, #7c95c4, #819ac7, #869eca);
   display: flex;
   justify-content: flex-start;
   box-sizing: border-box;
@@ -65,6 +68,12 @@ background-image: linear-gradient(to right top, #fcfcfc, #fafbfa, #f9f9f9, #f7f8
 
 .item:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+title {
+  color: red;
+  font-family: verdana;
+  font-size: 300%;
+
 }
 h1 {
   color: white;
