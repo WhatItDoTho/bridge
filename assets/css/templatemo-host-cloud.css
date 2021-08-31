@@ -341,7 +341,7 @@ header {
 	transition: all 0.5s;
 }
 .functional-buttons	ul li:first-child a:hover {
-	color: #000;
+	color: #00bcd4;
 	background-color: #fff;
 }
 .functional-buttons	ul li:last-child a {
@@ -387,8 +387,20 @@ header {
 	position: relative;
 }
 .banner #search-section input.recipientAddress {
-	float: center;
-	width: 570px;
+	width: 100%;
+	min-width: 280px;
+	height: 49px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	padding: 0px 15px;
+	color: #fff;
+	outline: none;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+}
+.banner #search-section input.Amount {
+	width: 100%;
 	min-width: 280px;
 	height: 49px;
 	background-color: transparent;
@@ -401,7 +413,6 @@ header {
 	margin-bottom: 30px;
 }
 .banner #search-section input.main-button {
-	position: absolute;
 	top: 0;
 	right: 0;
 	outline: none;
@@ -411,7 +422,7 @@ header {
 	line-height: 50px;
 	padding: 0px 20px;
 	border: none;
-	margin-left: 10px;
+	margin-left: 0px;
 	background-color: #00bcd4;
 	color: #fff;
 	text-transform: uppercase;
@@ -621,13 +632,13 @@ header {
 .pricing-item ul li:last-child {
 	margin-bottom: 40px;
 }
-.pricing-item a.main-button,
+/*.pricing-item a.main-button,
 .pricing-item a.gradient-button {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: -25px;
-}
+}*/
 
 
 
@@ -1017,10 +1028,10 @@ footer .sub-footer a {
 /* Responsive Style */
 @media (max-width: 1200px) {
 	.banner #search-section input.main-button {
-		position: absolute;
-		top: 75px;
+		
+	/*	top: 75px;
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translateX(-50%);*/
 	}
 	.banner #search-section input.searchText {
 		float: none;
