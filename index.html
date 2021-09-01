@@ -4,9 +4,10 @@
   <head>
 
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
+    <meta name="author" content="Librium">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
     <title>Librium</title>
@@ -16,7 +17,7 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/templatemo-host-cloud.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
   </head>
@@ -25,20 +26,23 @@
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
+      <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Librium <em>Bridge</em></h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="index.html">
+            <h2>Librium <em>Bridge</em></h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -52,16 +56,15 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
 
             </ul>
           </div>
           <div class="functional-buttons">
             <ul>
-              
-</li>
-              <li><a id="connectButton" href="#">Connect</a></li>
+              <li>
+                <button type="button" class="btn btn-primary" id="button-connect" disabled></button>
             </ul>
           </div>
         </div>
@@ -73,78 +76,42 @@
     <div class="banner">
       <div class="container">
         <div class="row">
-                            <div class="col-md-2 align-self-center">
-</div>
+          <div class="col-md-2 align-self-center">
+          </div>
           <div class="col-md-8 align-self-center">
             <div class="header-text caption">
               <h2>Bridging DeFi protocols with ease</h2>
               <div id="search-section">
-              	<form id="suggestion_form" name="gs" method="get" action="#">
-                
+                <form id="suggestion_form" name="gs" method="get" action="#">
+
                   <div class="row">
                     <div class="col">
-                      <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Select "From" Chain
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <button class="dropdown-item" type="button">Action</button>
-    <button class="dropdown-item" type="button">Another action</button>
-    <button class="dropdown-item" type="button">Something else here</button>
-  </div>
-</div>
-                    </div>
-                    <div class="col">
-                      this space should be blank
-                    </div>
-                    <div class="col">
-                      <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Select "To" Chain
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <button class="dropdown-item" type="button">Action</button>
-    <button class="dropdown-item" type="button">Another action</button>
-    <button class="dropdown-item" type="button">Something else here</button>
-  </div>
-</div>
+                      <input type="text" name="recipientAddress" class="recipientAddress"
+                        placeholder="Enter recipient address" autocomplete="on">
+                      <div class="row">
+                        <div class="col">
+                          <input type="text" name="Amount" class="Amount" placeholder="Enter amount" autocomplete="on">
+                        </div>
+                      </div>
                     </div>
                   </div>
-
-
-
-                <div class="row">
-                    <div class="col">
-                      <input type="text" name="recipientAddress" class="recipientAddress" placeholder="Enter recipient address" autocomplete="on">
                   <div class="row">
-                    <div class="col">
-                      <input type="text" name="Amount" class="Amount" placeholder="Enter amount" autocomplete="on">
-</div>
-</div>
-                    </div>
-                  </div>
-                    <div class="row">
                     <div class="col">
                       <input type="submit" name="results" class="main-button" value="Approve">
-</div>
-</div>
-
-                 
-                 </form>
+                    </div>
+                  </div>
+                </form>
 
               </div>
 
             </div>
           </div>
           <div class="col-md-2 align-self-center">
-</div>
+          </div>
         </div>
       </div>
     </div>
     <!-- Banner Ends Here -->
-
-  
-
 
     <!-- Services Starts Here -->
     <div class="services-section">
@@ -153,7 +120,7 @@
           <div class="col-md-12">
             <div class="section-heading">
               <h2>Analytics</h2>
-              
+
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
@@ -187,199 +154,7 @@
       </div>
     </div>
     <!-- Services Ends Here -->
-<!-- 
 
-     Pricing Starts Here 
-    <div class="pricing-section">
-      <div class="background-image-pricing">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <div class="section-heading">
-              <h2>Cloud Hosting Plans</h2>
-              <p>Lorem ipsum dolor amet taxidermy sriracha cardigan salvia actually vice migas enamel pin sustainable carry scenester lomo hot chicken farm table actually kinfolk.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-item">
-              <h4>Basic Cloud 5x</h4>
-              <div class="price">
-                <h6>$15.50</h6>
-                <span>monthly</span>
-              </div>
-              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
-              <div class="dev"></div>
-              <ul>
-                <li><i class="fa fa-check"></i>500 GB Storage Space</li>
-                <li><i class="fa fa-check"></i>3 TB Data Transfer</li>
-                <li><i class="fa fa-check"></i>Basic Managed Panel</li>
-                <li><i class="fa fa-check"></i>24/7 Fast Support</li>
-                <li><i class="fa fa-check"></i>100 Premium Themes</li>
-                <li><i class="fa fa-check"></i>Cancel or Upgrade Anytime</li>
-              </ul>
-              <a href="#" class="main-button">Start Plan</a>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-item">
-              <h4>Cloud VPS 10x</h4>
-              <div class="price price-gradient">
-                <h6>$30.00</h6>
-                <span>monthly</span>
-              </div>
-              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
-              <div class="dev"></div>
-              <ul>
-                <li><i class="fa fa-check"></i>1 TB Cloud Space</li>
-                <li><i class="fa fa-check"></i>8 TB Data Transfer</li>
-                <li><i class="fa fa-check"></i>Fully Managed Panel</li>
-                <li><i class="fa fa-check"></i>15-minute Quick Support</li>
-                <li><i class="fa fa-check"></i>Unlimted Web Addons</li>
-                <li><i class="fa fa-check"></i>Cancel or Upgrade Anytime</li>
-              </ul>
-              <a href="#" class="gradient-button">Select Plan</a>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="pricing-item">
-              <h4>Advanced Cloud</h4>
-              <div class="price">
-                <h6>$72.25</h6>
-                <span>monthly</span>
-              </div>
-              <p>Etiam sit amet placerat lacus, sed placerat mauris. Vestibulum malesuada vehicula sapien non tempus.</p>
-              <div class="dev"></div>
-              <ul>
-                <li><i class="fa fa-check"></i>4 TB Cloud Space</li>
-                <li><i class="fa fa-check"></i>20 TB Data Transfer</li>
-                <li><i class="fa fa-check"></i>Fully Managed Panel</li>
-                <li><i class="fa fa-check"></i>15-minute Quick Support</li>
-                <li><i class="fa fa-check"></i>Top Notch Web Apps</li>
-                <li><i class="fa fa-check"></i>Advanced Scalable</li>
-              </ul>
-              <a href="#" class="main-button">Take it now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     Pricing Ends Here 
-
-
-     Features Starts Here 
-    <div class="features-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <span>Best Quality for you</span>
-              <h2>Cloud Features</h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>Load Balanced</h4>
-              <p>Nulla nisl ex, vehicula in urna nec, commodo consectetur augue. Vivamus nec metus mauris. Praesent lacinia tempus urna.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>99.9% Uptime Guaranteed</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>Top Reliability</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>High Security</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>Quality Hardwares</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="feature-item">
-              <div class="icon">
-                <img src="assets/images/feature-01.png" alt="">
-              </div>
-              <h4>Network Solutions</h4>
-              <p>Lorem ipsum dolor ame taxidermy sriracha cardigan salvia actually vice migas en pin sustainable carry scenester.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     Features Ends Here 
-
-
-     Testimonials Starts Here     <div class="testimonials-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <span>Testimonials</span>
-              <h2>What they say about us</h2>
-            </div>
-          </div>
-          <div class="col-md-10 offset-md-1">
-            <div class="owl-testimonials owl-carousel">
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Ut elementum a elit sed tristique. Pellentesque sed semper erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut malesuada."</p>
-                <h4>William Smith</h4>
-                <span>New Co-Founder</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Quisque lacinia sed velit et maximus. Quisque dictum, lacus a malesuada finibus, arcu magna luctus risus, eu accumsan risus elit vitae lacus."</p>
-                <h4>Vinny Smart</h4>
-                <span>Digital Marketer</span>
-              </div>
-              <div class="testimonial-item">
-                <div class="icon">
-                  <i class="fa fa-quote-right"></i>
-                </div>
-                <p>"Vestibulum mauris ipsum, tempor tincidunt justo sit amet, bibendum tincidunt dui. Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis."</p>
-                <h4>Trevor Liam</h4>
-                <span>Technology Chef</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-     Testimonials Ends Here 
-
- -->
     <!-- Footer Starts Here -->
     <footer>
       <div class="container">
@@ -389,13 +164,15 @@
               <div class="footer-heading">
                 <h2>About Us</h2>
               </div>
-              <p>Bridge is a trick-taking card game using a standard 52-card deck. In its basic format, it is played by four players in two competing partnerships, with partners sitting opposite each other around a table.</p>
+              <p>Bridge is a trick-taking card game using a standard 52-card deck. In its basic format, it is played by
+                four players in two competing partnerships, with partners sitting opposite each other around a table.
+              </p>
             </div>
           </div>
-          
-          
-          
-          
+
+
+
+
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="footer-item">
               <div class="footer-heading">
@@ -410,8 +187,8 @@
               </ul>
             </div>
           </div>
-          
-         
+
+
           <div class="col-md-12">
             <div class="sub-footer">
               <p>POWERED BY LIBRIUM</a></p>
@@ -432,35 +209,26 @@
     <script src="assets/js/accordions.js"></script>
 
     <!-- web3 -->
-      <script src="assets/js/web3.js/dist/web3.min.js"></script>
-      <script src="node_modules/@metamask/onboarding/dist/metamask-onboarding.bundle.js" defer></script>
-      <script src="assets/js/contract.js" defer></script>
+    <!-- <script src="node_modules/web3/dist/web3.min.js"></script> -->
 
-     <script language = "text/Javascript"> 
-  
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-    </script>
- 
-    <script> 
+    <!-- npm modules and contract -->
+    <script src="metamask-onboarding.bundle.js" defer></script>
+    <script src="contract.js" defer></script>
 
-      /* all your js code goes here
-      $(document).ready(function() {
+    <script>
+
+      // all your js code goes here
+      $(document).ready(function () {
 
         // fn for connect button that calls metamask
-        $('#button-connect').on('click', function() {
-          event.preventDefault();
-          alert('hey');
-        })
+        // $('#button-connect').on('click', function() {
+        //   event.preventDefault();
+        //   alert('hey');
+        // })
 
       })
-*/
+
     </script>
   </body>
+
 </html>
