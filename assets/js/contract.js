@@ -33,8 +33,9 @@ The `piggybankContract` is compiled from:
 const forwarderOrigin = 'http://localhost:9010'
 
 const initialize = () => {
+  //You will start here
   //Basic Actions Section
-  const onboardButton = document.getElementById('connectButton');
+  const onboardButton = document.getElementById('button-connect');
 
   //Created check function to see if the MetaMask extension is installed
   const isMetaMaskInstalled = () => {
@@ -44,7 +45,7 @@ const initialize = () => {
   };
 
   //We create a new MetaMask onboarding object to use in our app
-  const onboarding = new MetamaskOnboarding({ forwarderOrigin });
+  const onboarding = new MetaMaskOnboarding({ forwarderOrigin });
 
   //This will start the onboarding proccess
   const onClickInstall = () => {
@@ -57,32 +58,37 @@ const initialize = () => {
   const onClickConnect = async () => {
     try {
       // Will open the MetaMask UI
-      // You should disable this button while the request is pending!
+      onboardButton.disabled = true;
       await ethereum.request({ method: 'eth_requestAccounts' });
+      const accounts = await ethereum.request({ method: 'eth_accounts' });
+      //We take the first address in the array of addresses and display it
+      onboardButton.innerText = accounts[0] || 'Not able to get accounts';
     } catch (error) {
       console.error(error);
     }
   };
 
   const MetaMaskClientCheck = () => {
-  //Now we check to see if Metmask is installed
-  if (!isMetaMaskInstalled()) {
-    //If it isn't installed we ask the user to click to install it
-    onboardButton.innerText = 'Click here to install MetaMask!';
-    //When the button is clicked we call this function
-    onboardButton.onclick = onClickInstall;
-    //The button is now disabled
-    onboardButton.disabled = false;
-  } else {
-    //If MetaMask is installed we ask the user to connect to their wallet
-    onboardButton.innerText = 'Connect';
-    //When the button is clicked we call this function to connect the users MetaMask Wallet
-    onboardButton.onclick = onClickConnect;
-    //The button is now disabled
-    onboardButton.disabled = false;
-  }
-};
+    //Now we check to see if Metmask is installed
+    if (!isMetaMaskInstalled()) {
+      //If it isn't installed we ask the user to click to install it
+      onboardButton.innerText = 'Click here to install MetaMask!';
+      //When the button is clicked we call th is function
+      onboardButton.onclick = onClickInstall;
+      //The button is now disabled
+      onboardButton.disabled = false;
+    } else {
+      //If MetaMask is installed we ask the user to connect to their wallet
+      onboardButton.innerText = 'Connect';
+      //When the button is clicked we call this function to connect the users MetaMask Wallet
+      onboardButton.onclick = onClickConnect;
+      //The button is now disabled
+      onboardButton.disabled = false;
+    }
+  };
 
-MetaMaskClientCheck();
-};
+  MetaMaskClientCheck();
+  
+}
+
 window.addEventListener('DOMContentLoaded', initialize)
