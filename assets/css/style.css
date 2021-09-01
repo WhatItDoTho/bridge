@@ -507,14 +507,92 @@ header {
 
 
 
-/* Services Style */
-.services-section {
+/* Analytics Style */
+.analytics-section {
 	margin-top: 140px;
 }
-.services-section .section-heading h2 {
+.analytics-section .section-heading h2 {
 	color: #1e1e1e;
 }
-.services-section .service-item {
+.analytics-section .bsc {
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	padding: 50px 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.analytics-section .bsc i {
+	color: #fff;
+	background-image: url(../images/bscicon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-align: center;
+	font-size: 32px;
+}
+.analytics-section .bsc h4 {
+	font-size: 19px;
+	color: #1e1e1e;
+	text-transform: capitalize;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+}
+
+.analytics-section .polygon {
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	padding: 50px 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.analytics-section .polygon i {
+	color: #fff;
+	background-image: url(../images/polygonicon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-align: center;
+	font-size: 32px;
+}
+.analytics-section .polygon h4 {
+	font-size: 19px;
+	color: #1e1e1e;
+	text-transform: capitalize;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+}
+
+.analytics-section .avax {
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	padding: 50px 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.analytics-section .avax i {
+	color: #fff;
+	background-image: url(../images/avaxicon.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-align: center;
+	font-size: 32px;
+}
+.analytics-section .avax h4 {
+	font-size: 19px;
+	color: #1e1e1e;
+	text-transform: capitalize;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+}
+
+.analytics-section .service-item {
 	background-color: #f7f7f7;
 	border-radius: 5px;
 	padding: 50px 40px;
@@ -524,7 +602,8 @@ header {
 .services-page .service-item {
 	margin-bottom: 30px;
 }
-.services-section .service-item i {
+
+.analytics-section .service-item i {
 	color: #fff;
 	background-color: #00bcd4;
 	display: inline-block;
@@ -535,7 +614,7 @@ header {
 	border-radius: 50%;
 	font-size: 32px;
 }
-.services-section .service-item h4 {
+.analytics-section .service-item h4 {
 	margin-top: 35px;
 	font-size: 19px;
 	color: #1e1e1e;
