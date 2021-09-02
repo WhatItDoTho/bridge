@@ -7,11 +7,11 @@ https://templatemo.com/tm-541-host-cloud
 */
 @font-face {
   font-family: LemonMilk;
-  src: url(/assets/fonts/LEMONMILK-Regular.otf);
+  src: url('../fonts/LEMONMILK-Regular.otf');
 }
 @font-face {
   font-family: GratySans;
-  src: url(/assets/fonts/GratySans.otf);
+  src: url('../fonts/GratySans.otf');
 }
 body {
   font-family: 'Roboto', sans-serif;
